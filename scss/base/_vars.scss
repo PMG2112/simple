@@ -1,0 +1,42 @@
+:root {
+  --default-border-color: rgba(120, 117, 254, 1);
+  --active-color: rgba(73, 70, 180, 1);
+  --hover-color: rgba(120, 117, 254, 1);
+  --focus-color: rgba(218, 217, 251, 1);
+  --nav-close-btn: rgba(209, 209, 229, 1);
+
+  --title-text-color: rgba(76, 88, 102, 1);
+  --logo-text-color: rgba(51, 51, 51, 1);
+  --main-text-color: rgba(133, 133, 155, 1);
+  --inform-title-color: rgba(102, 102, 102, 1);
+  --inform-text-edition: rgba(181, 181, 189, 1);
+  --readmore-text: rgba(120, 117, 254, 1);
+
+  --nav-border-color: rgba(221, 221, 221, 1);
+  --background-color: rgba(235, 235, 235, 1);
+  --background-color-light: rgba(255, 255, 255, 1);
+  --bacground-color-footer: rgba(76, 88, 102, 1);
+  --footer-logo-color: rgba(255, 255, 255, 1);
+  --footer-logo-light: rgba(188, 188, 188, 1);
+
+  --font-main: 'Roboto', sans-serif;
+  --font-logo: 'Ubuntu', sans-serif;
+}
+
+@mixin tablet() {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin tablet-mini() {
+  @media (max-width: 770px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (max-width: 510px) {
+    @content;
+  }
+}

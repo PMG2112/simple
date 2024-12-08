@@ -1,0 +1,25 @@
+.brends-screen {
+
+}
+
+.inform-brends__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 90px 0;
+  gap: 30px;
+
+  @include mobile () {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.brend-item {
+
+}
+
+.brends__link {
+
+}
+

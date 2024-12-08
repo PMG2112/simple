@@ -1,0 +1,112 @@
+.inform-screen {
+
+}
+
+//INFORM FORM
+.inform-form {
+  margin: 90px 0;
+}
+
+    //INFORM TITLE
+   .inform-title {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+
+  @include mobile () {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   }
+
+      .list-inform__item {
+      border-top: 1px solid #000;
+
+      @include mobile () {
+        max-width: 100%;
+      }
+      }
+       
+          .list-inform {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 19px;
+            gap: 30px;
+
+            @include tablet() {
+              flex-direction: column;
+            }
+
+            @include mobile () {
+              flex-direction: row;
+            }
+           }
+           
+          .item-img {
+
+           }
+
+          .item-text {
+            width: 160px;
+           }
+       
+           .text-v {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            color: var(--inform-title-color);
+           }
+
+           .item-text p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+          }
+
+// INFORM MAIN
+ .inform-main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  align-items: center;
+
+  @include tablet () {
+  margin-top: 40px;
+  }
+
+  @include mobile () {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+}
+  
+    .inform-main__img {
+      max-width: clamp(18.125rem, 3.044rem + 47.31vw, 45.625rem);
+    }
+
+// MAIN TEXT
+    .inform-main__text {
+      max-width: clamp(20.625rem, 12.401rem + 10.53vw, 21.875rem);
+
+      @include mobile () {
+        max-width: 100%;
+      }
+    }
+
+        .main-inform__title {
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 100%;
+          color: var(--inform-title-color);
+        }
+
+        .inform-main__text p {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 170%;
+          color: var(--main-text-color);
+          padding-top: 20px;
+        }

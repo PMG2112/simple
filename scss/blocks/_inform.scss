@@ -1,0 +1,152 @@
+.top-product {
+  position: relative;
+  background-color: var(--background-color-light);
+}
+
+.top-product-form {
+  display: flex;
+  gap: 30px;
+  padding-top: 90px;
+  justify-content: center;
+
+  @include tablet-mini () {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 60px;
+    align-items: center;
+  }
+
+  // @include tablet () {
+  //   padding-bottom: 144px;
+  // }
+
+}
+
+.top-product__description {
+  padding-top: 24px;
+  max-width: 350px;
+
+  @include tablet-mini () {
+    padding: 60px 0;
+  }
+}
+
+.top-product__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: var( --inform-title-color);
+}
+
+.top-product__description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  padding: 8px 0 30px;
+
+  @include tablet () {
+    padding: 20px 0 30px;
+  }
+}
+
+.top-product__description > button {
+  margin-bottom: 114px;
+}
+
+.top-product__img {
+  width: 730px;
+  max-height: 410px;
+}
+
+// FOOTER END
+.footer-end {
+  display: flex;
+  font-weight: 400;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  margin: 3px 0;
+
+  p {
+    color: var(--footer-logo-light);
+  }
+}
+
+// FOOTER
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+  background-color: var(--bacground-color-footer);
+
+  @include tablet () {
+  bottom: 20px;
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mobile () {
+    display: grid;
+    grid-template-columns:  1fr;
+    justify-items: center;
+  }
+}
+
+// LOGO
+.footer-logo {
+  color: var(--footer-logo-color);
+  padding: 20px 0;
+}
+
+// SOCIAL
+.social-icon {
+  display: flex;
+  gap: 30px;
+  flex-direction: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px 0;
+
+  @include mobile () {
+    border-top: 1px solid var(--nav-border-color);
+    width: 290px;
+  }
+}
+
+   .social-icon__item {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+      border-radius: 5px;
+
+        &:hover .social-icon-img path {
+          fill: var(--focus-color);
+        }
+  
+        &:focus {
+          background-color: var(--hover-color);
+        }
+  
+        &:active .social-icon-img path {
+          fill: var(--hover-color);
+        }
+    }
+
+        svg {
+         height: 18px;
+         width: 18px;
+         display: block;
+         margin: auto;
+        }
